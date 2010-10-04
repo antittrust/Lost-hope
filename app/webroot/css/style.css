@@ -180,6 +180,17 @@ left: auto;
 min-height: 0;
 }
 
+/*Forum*/
+
+.vt_auteur
+{
+width:25%;
+}
+.vt_mess
+{
+width:70%;
+}
+
 /*Corp de la page*/
 
 #header     

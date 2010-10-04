@@ -10,11 +10,11 @@
         </tr>
         <tr>
         	<td><strong><?php e($thread['User']['username'])?></strong></td>
-			<td>posté le: <?php e($thread['Thread']['created'])?></td>
+			<td>posté le: <?php e(date('d / m / Y à h:i', strtotime($thread['Thread']['created'])))?></td>
 		</tr>
 		<tr>
 		<td>avatar <br />
-			Inscrit le: <?php e($thread['User']['created'])?> <br />
+			Inscrit le: <?php e(date('d / m / Y',strtotime($thread['User']['created'])))?> <br />
 			Email: <?php e($thread['User']['mail'])?>	
 		</td>
 		<td><?php e($thread['Thread']['content'])?><hr />Signature</td>
@@ -23,11 +23,11 @@
 <?php foreach ($post as $p):?>
         <tr>
         	<td><strong><?php e($p['User']['username'])?></strong></td>
-			<td>posté le: <?php e($p['Post']['created'])?></td>
+			<td>posté le: <?php e(date('d / m / Y à H:i',strtotime($p['Post']['created'])))?></td>
 		</tr>
 		<tr>
 		<td>avatar <br />
-			Inscrit le: <?php e($p['User']['created'])?> <br />
+			Inscrit le: <?php e(date('d / m / Y',strtotime($p['User']['created'])))?> <br />
 			Email: <?php e($p['User']['mail'])?>	
 		</td>
 		<td><?php e($p['Post']['content'])?><hr />Signature</td></tr>
