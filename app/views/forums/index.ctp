@@ -1,6 +1,6 @@
 <div class="cadre_haut"></div>
-<?php echo $html->image('/app/webroot/css/images/folder_open.png',array('style'=> 'margin-left:17px;'));?>Lost-hope<br /> 
-<?php echo  $html->image('/app/webroot/css/images/subforum.png',array('style'=> 'margin-left:25px;'));?>
+<?php echo $html->image('/css/images/folder_open.png',array('style'=> 'margin-left:17px;'));?>Lost-hope<br /> 
+<?php echo  $html->image('/css/images/subforum.png',array('style'=> 'margin-left:25px;'));?>
 <div class="cadre_haut"></div>
 <div class="cadre_fond"><!-- CADRE -->
 <table>
@@ -16,7 +16,7 @@
   <?php foreach ($f['Category'] as $category): ?>
   
   <tr>
-    <td><?php echo $html->image('/theme/img/message.gif'); ?></td>
+    <td><?php echo $html->image('/css/images/no_new.gif'); ?></td>
     <td><?php echo $html->link($category['title'],array('controller'=>'categories','action'=>'view',$category['id'])); 
     		  echo '<br />'.$category['description'];?></td>
     <th><?php echo $category['thread_count'];?></th>

@@ -1,8 +1,9 @@
+<?php e(debug($thread))?>
 <p><?php e($html->image('/app/webroot/css/images/folder_open.png',array('style'=> 'margin-left:17px;')));?><?php e($html->link('Lost-hope',array('controller'=>'forums','action'=>'index')));?>::<?php e($html->link($thread['Categorie']['title'], array('controller' => 'categories', 'action' => 'view', $thread['Categorie']['id'])))?><br />
 <?php e($html->image('/app/webroot/css/images/subforum.png',array('style'=> 'margin-left:25px;')));?><?php e($thread['Thread']['title'])?></p>
 
 
-<?php e($html->image('/app/webroot/css/images/repondre.gif', array('url' => array('controller' => 'posts', 'action' => 'add', $thread['Thread']['id']))))?>
+<?php e($html->image('/css/images/repondre.gif', array('url' => array('controller' => 'posts', 'action' => 'add', $thread['Thread']['id']))))?>
 <table>
         <tr>
         	<th class="vt_auteur"><strong>Auteurs</strong></th>             

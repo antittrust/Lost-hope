@@ -21,8 +21,8 @@ class ThreadsController extends AppController {
 	}
 
 	function add() {
-		
-	}
+
+    }
 
 	function edit($id = null) {
 		

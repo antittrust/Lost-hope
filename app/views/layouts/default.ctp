@@ -5,7 +5,7 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
 <meta http-equiv="content-language" content="fr" />
-<?php echo $html->css('/css/style'); ?> 
+<?php echo $html->css('/css/style.css'); ?> 
 </head>
 <body>	
 

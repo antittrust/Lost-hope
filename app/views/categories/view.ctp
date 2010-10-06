@@ -1,13 +1,13 @@
 <div class="cadre_haut"></div>
 <?php foreach($cat as $c): ?>
 
-<p><?php echo $html->image('/app/webroot/css/images/folder_open.png',array('style'=> 'margin-left:17px;'));?><?php echo $html->link('Lost-hope',array('controller'=>'forums','action'=>'index'));?><br /> 
-<?php echo  $html->image('/app/webroot/css/images/subforum.png',array('style'=> 'margin-left:25px;'));?><?php echo $c['Category']['title']?></p>
+<p><?php echo $html->image('/css/images/folder_open.png',array('style'=> 'margin-left:17px;'));?><?php echo $html->link('Lost-hope',array('controller'=>'forums','action'=>'index'));?><br /> 
+<?php echo  $html->image('/css/images/subforum.png',array('style'=> 'margin-left:25px;'));?><?php echo $c['Category']['title']?></p>
 
 <div class="cadre_haut"></div>
 <div class="cadre_fond"><!-- CADRE -->
 
-<?php echo $html->image('/app/webroot/css/images/nouveau.gif', array('alt' => 'Nouveau', 'url' => array('controller' => 'threads', 'action' => 'add')));?>
+<?php echo $html->image('/css/images/nouveau.gif', array('alt' => 'Nouveau', 'url' => array('controller' => 'threads', 'action' => 'add')));?>
 
 <table>
 
@@ -21,7 +21,7 @@
   <?php foreach ($c['Thread'] as $thread): ?>
   
   <tr>
-    <td><?php echo $html->image('/app/webroot/css/images/no_new.gif'); ?></td>
+    <td><?php echo $html->image('/css/images/no_new.gif'); ?></td>
     <td><?php echo $html->link($thread['title'],array('controller'=>'threads','action'=>'view',$thread['id']));?></td>
     <th><?php echo $thread['post_count']?></th>
     <th>N/A</th>
