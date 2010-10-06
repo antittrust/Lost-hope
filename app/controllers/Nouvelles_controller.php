@@ -13,6 +13,11 @@ class NouvellesController extends AppController {
     
     var $uses = array('Nouvelle', 'Comment');
 	
+    function beforeFilter(){
+    	parent::beforeFilter();
+    	$this->Auth->allow('*');
+    }
+    
     function index(){
     	
     	$this->set('title_for_layout', 'Lost-hope :: Acceuil');

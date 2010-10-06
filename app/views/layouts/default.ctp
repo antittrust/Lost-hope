@@ -50,6 +50,8 @@
 
 <div id="header"></div>
 <div id="contenu"><!-- CONTENU -->		
+<?php $session->flash();?>
+<?php $session->flash('Auth');?>
 
 <?php echo $content_for_layout ?>
  

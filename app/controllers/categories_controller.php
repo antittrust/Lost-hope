@@ -2,7 +2,12 @@
 class CategoriesController extends AppController {
 
 	var $name = 'Categories';
-
+    
+	function beforeFilter(){
+    	parent::beforeFilter();
+    	$this->Auth->allow('view');
+    }
+    
 	function index() {
 		//$this->Category->recursive = 0;
 		//$this->set('categories', $this->paginate());

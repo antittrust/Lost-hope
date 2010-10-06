@@ -3,6 +3,11 @@ class ForumsController extends AppController {
 
 	var $name = 'Forums';
 
+    function beforeFilter(){
+    	parent::beforeFilter();
+    	$this->Auth->allow('index');
+    }
+    
 	function index() {
 		$this->set('title_for_layout', 'Lost-hope :: Forums :: Index');
 		$this->Forum;

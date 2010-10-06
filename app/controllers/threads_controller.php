@@ -4,9 +4,15 @@ class ThreadsController extends AppController {
 	var $name = 'Threads';
 	var $helpers = array('Markitup'); 
 
+    function beforeFilter(){
+    	parent::beforeFilter();
+    	$this->Auth->allow('index', 'view');
+    }
+    
 	function index() {
-		$this->Thread->recursive = 0;
-		$this->set('threads', $this->paginate());
+		//$this->Thread->recursive = 0;
+		//$this->set('threads', $this->paginate());
+		$this->redirect(array('controller'=>'forums','action' => 'index'));
 	}  
 
 	function view($id) {
